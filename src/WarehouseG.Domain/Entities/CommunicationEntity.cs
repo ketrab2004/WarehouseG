@@ -37,7 +37,7 @@ namespace WarehouseG.Domain.Entities
         /// <summary>
         /// Street number extension of house/building
         /// <br />
-        /// Nullable for communications with no extension
+        /// Nullable for Communications with no extension
         /// </summary>
         public string? NumberExtension { get; set; }
 
@@ -46,5 +46,29 @@ namespace WarehouseG.Domain.Entities
         /// Zipcode of house/building
         /// </summary>
         public string ZipCode { get; set; }
+
+
+        /// <summary>
+        /// Place of the house/building
+        /// </summary>
+        public string Place { get; set; }
+
+
+        /// <summary>
+        /// The province where the house/building lies
+        /// </summary>
+        public string Province { get; set; }
+
+
+        /// <summary>
+        /// Phonenumber of the communication
+        /// </summary>
+        public string Phone { get; set; }
+
+
+        /// <summary>
+        /// The phonenumber of the mobile phone of the communication
+        /// </summary>
+        public string MobilePhone { get; set; }
     }
 }
