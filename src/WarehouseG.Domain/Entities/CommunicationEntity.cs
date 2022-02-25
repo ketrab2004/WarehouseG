@@ -69,6 +69,73 @@ namespace WarehouseG.Domain.Entities
         /// <summary>
         /// The phonenumber of the mobile phone of the communication
         /// </summary>
-        public string MobilePhone { get; set; }
+        public string Mobile { get; set; }
+
+        /// <summary>
+        /// The fax number
+        /// <br />
+        /// Nullable because not everybody has a fax machine anymore
+        /// </summary>
+        public string? Fax { get; set; }
+
+        /// <summary>
+        /// The email address
+        /// </summary>
+        public string Email { get; set; }
+
+        /// <summary>
+        /// Their website
+        /// </summary>
+        public string Website { get; set; }
+
+        /// <summary>
+        /// The type of address for their house/building
+        /// </summary>
+        public string AddressType { get; set; }
+
+        /// <summary>
+        /// Internal Communication key id
+        /// </summary>
+        public Guid Communicationkey { get; set; }
+
+        /// <summary>
+        /// Description of this Communication
+        /// </summary>
+        public string Description { get; set; }
+
+        /// <summary>
+        /// Whether this communication is active
+        /// </summary>
+        public bool IsActive { get; set; }
+
+        /// <summary>
+        /// Creation date of Communication
+        /// </summary>
+        public DateTime DateCreated { get; set; }
+
+        /// <summary>
+        /// Modification date of Communication
+        /// </summary>
+        public DateTime DateModified { get; set; }
+
+        /// <summary>
+        /// Expiration date of Communication
+        /// </summary>
+        public DateTime DateExpired { get; set; }
+
+        /// <summary>
+        /// Modification number of database table record
+        /// </summary>
+        public byte[] Timestamp { get; set; }
+
+        /// <summary>
+        /// List of customers which belong to Communication.
+        /// </summary>
+        //public ICollection<CustomerCommunicationEntity> CustomerCommunicationList { get; set; }
+
+        /// <summary>
+        /// List of Shippers which belong to Communication.
+        /// </summary>
+        //public ICollection<ShipperCommunicationEntity> ShipperCommunicationList { get; set; }
     }
 }
