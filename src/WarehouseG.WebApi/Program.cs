@@ -21,7 +21,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    //app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "Warehouse Web Api V1"));
+    //app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "WarehouseG Web Api V1"));
 }
 
 app.UseHttpsRedirection();
