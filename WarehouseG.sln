@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseG.WebApi", "src\Wa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-ServicesApi", "02-ServicesApi", "{BEADDF9F-9FF2-4585-9A14-C4801C8F96D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseG.Domain", "src\WarehouseG.Domain\WarehouseG.Domain.csproj", "{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{5C7F5324-BADB-45BB-9F20-E94F751F8B29} = {C321FEB4-F429-4EA4-8C57-AD10EB2317DD}
 		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E} = {DA4317AA-0E94-494F-8F8F-348D0095EC03}
 		{BEADDF9F-9FF2-4585-9A14-C4801C8F96D7} = {C321FEB4-F429-4EA4-8C57-AD10EB2317DD}
+		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74} = {FDF2A02A-9C8B-4197-9C4D-7005D2DC1DE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16E36362-72C8-48F0-9C82-2E0E00978D81}
