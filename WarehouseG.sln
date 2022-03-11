@@ -5,6 +5,13 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{E7F284F1-F958-4636-B4C3-A86EC1047A77}"
 	ProjectSection(SolutionItems) = preProject
+		doc\Fill communication table with data.sql = doc\Fill communication table with data.sql
+		doc\github 2009A info.txt = doc\github 2009A info.txt
+		doc\github 2009B info.txt = doc\github 2009B info.txt
+		doc\github 2009C info.txt = doc\github 2009C info.txt
+		doc\Migrations command.txt = doc\Migrations command.txt
+		doc\SolutionFolders.txt = doc\SolutionFolders.txt
+		doc\SolutionFolders.txt.bak = doc\SolutionFolders.txt.bak
 		doc\Store diagram.docx = doc\Store diagram.docx
 		doc\What is Framework.pptx = doc\What is Framework.pptx
 	EndProjectSection
@@ -25,11 +32,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Domain", "05-Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Infrastructure", "06-Infrastructure", "{5C7F5324-BADB-45BB-9F20-E94F751F8B29}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehouseG.WebApi", "src\WarehouseG.WebApi\WarehouseG.WebApi.csproj", "{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-ServicesApi", "02-ServicesApi", "{BEADDF9F-9FF2-4585-9A14-C4801C8F96D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseG.Domain", "src\WarehouseG.Domain\WarehouseG.Domain.csproj", "{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.WebApi", "src\Warehouse.WebApi\Warehouse.WebApi.csproj", "{5EF88FF9-D081-4797-9F5A-7CD9602B5DE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Domain", "src\Warehouse.Domain\Warehouse.Domain.csproj", "{C3664208-ABC2-46D5-AF0F-9432DF247FC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Application", "src\Warehouse.Application\Warehouse.Application.csproj", "{3803B921-43EF-4561-AB10-1A36ECA52832}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.Infrastructure", "src\Warehouse.Infrastructure\Warehouse.Infrastructure.csproj", "{74A813C8-0586-4D26-9BC3-6E372D68EBFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +48,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF88FF9-D081-4797-9F5A-7CD9602B5DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF88FF9-D081-4797-9F5A-7CD9602B5DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF88FF9-D081-4797-9F5A-7CD9602B5DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF88FF9-D081-4797-9F5A-7CD9602B5DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3664208-ABC2-46D5-AF0F-9432DF247FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3664208-ABC2-46D5-AF0F-9432DF247FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3664208-ABC2-46D5-AF0F-9432DF247FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3664208-ABC2-46D5-AF0F-9432DF247FC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3803B921-43EF-4561-AB10-1A36ECA52832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3803B921-43EF-4561-AB10-1A36ECA52832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3803B921-43EF-4561-AB10-1A36ECA52832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3803B921-43EF-4561-AB10-1A36ECA52832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A813C8-0586-4D26-9BC3-6E372D68EBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A813C8-0586-4D26-9BC3-6E372D68EBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A813C8-0586-4D26-9BC3-6E372D68EBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A813C8-0586-4D26-9BC3-6E372D68EBFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,9 +74,11 @@ Global
 		{40E9FC9A-B3AA-4CE8-B4FA-418C065C10F0} = {C321FEB4-F429-4EA4-8C57-AD10EB2317DD}
 		{FDF2A02A-9C8B-4197-9C4D-7005D2DC1DE0} = {C321FEB4-F429-4EA4-8C57-AD10EB2317DD}
 		{5C7F5324-BADB-45BB-9F20-E94F751F8B29} = {C321FEB4-F429-4EA4-8C57-AD10EB2317DD}
-		{90DE1D7E-7FC8-497A-9B07-D684C1C8A36E} = {DA4317AA-0E94-494F-8F8F-348D0095EC03}
 		{BEADDF9F-9FF2-4585-9A14-C4801C8F96D7} = {C321FEB4-F429-4EA4-8C57-AD10EB2317DD}
-		{5DFCF4A2-D8DB-413C-AF65-1AE12BC0DA74} = {FDF2A02A-9C8B-4197-9C4D-7005D2DC1DE0}
+		{5EF88FF9-D081-4797-9F5A-7CD9602B5DE8} = {DA4317AA-0E94-494F-8F8F-348D0095EC03}
+		{C3664208-ABC2-46D5-AF0F-9432DF247FC7} = {FDF2A02A-9C8B-4197-9C4D-7005D2DC1DE0}
+		{3803B921-43EF-4561-AB10-1A36ECA52832} = {40E9FC9A-B3AA-4CE8-B4FA-418C065C10F0}
+		{74A813C8-0586-4D26-9BC3-6E372D68EBFA} = {5C7F5324-BADB-45BB-9F20-E94F751F8B29}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16E36362-72C8-48F0-9C82-2E0E00978D81}
