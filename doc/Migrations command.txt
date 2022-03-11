@@ -1,6 +1,6 @@
 
 dotnet tool install --global dotnet-ef
-cd C:\Users\MNJL\Documents\01-MboUtrecht_Projecten\Warehouse\src\Warehouse.Infrastructure
+cd C:\Users\barte\source\repos\WarehouseG_Cloned\src\Warehouse.Infrastructure
 dotnet ef migrations add InitialCreate
 dotnet ef migrations remove
 dotnet ef migrations script
