@@ -19,7 +19,7 @@ namespace Warehouse.Infrastructure
         /// <summary>
         /// Communication table.
         /// </summary>
-        public DbSet<CommunicationEntity> Comminucations { get; set; }
+        public DbSet<ContactEntity> Comminucations { get; set; }
 
         /// <summary>
         /// Initialize the data in database table.

@@ -5,5 +5,5 @@ namespace Warehouse.Application.Interfaces
     ///// <summary>
     ///// Communication repository interface.
     ///// </summary>
-    public interface ICommunicationRepository : IRepository<CommunicationEntity> { }
+    public interface ICommunicationRepository : IRepository<ContactEntity> { }
 }

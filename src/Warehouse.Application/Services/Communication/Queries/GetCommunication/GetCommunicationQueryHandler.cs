@@ -58,7 +58,7 @@ namespace Warehouse.Application.Services.Communication.Queries.GetCommunication
                 Email               = selectedCommunication.Email,
                 Website             = selectedCommunication.Website,
                 AddressType         = selectedCommunication.AddressType,
-                Communicationkey    = selectedCommunication.Communicationkey,
+                Communicationkey    = selectedCommunication.ContactKey,
                 Description         = selectedCommunication.Description,
                 IsActive            = selectedCommunication.IsActive,
                 DateCreated         = selectedCommunication.DateCreated,

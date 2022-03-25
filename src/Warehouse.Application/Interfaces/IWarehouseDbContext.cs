@@ -5,6 +5,6 @@ namespace Warehouse.Application.Interfaces
 {
     public interface IWarehouseDbContext
     {
-        DbSet<CommunicationEntity> Comminucations  { get; set;}
+        DbSet<ContactEntity> Comminucations  { get; set;}
     }
 }

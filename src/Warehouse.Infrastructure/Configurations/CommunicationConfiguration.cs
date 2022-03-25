@@ -7,20 +7,20 @@ namespace Warehouse.Infrastructure.Configurations
     /// <summary>
     /// Configure the Communication table.
     /// </summary>
-    public class CommunicationConfiguration : IEntityTypeConfiguration<CommunicationEntity>
+    public class CommunicationConfiguration : IEntityTypeConfiguration<ContactEntity>
     {
         /// <summary>
         /// Communication columns configuration.
         /// </summary>
         /// <param name="builder"></param>
-        public void Configure(EntityTypeBuilder<CommunicationEntity> builder)
+        public void Configure(EntityTypeBuilder<ContactEntity> builder)
         {
             builder.ToTable("Communication");
             builder.HasKey(c => c.Id);
             builder.HasIndex(c => new { c.ZipCode, c.Place });
 
             builder.Property(i => i.Id)
-                   .HasColumnName("Id");
+                    .HasColumnName("Id");
 
             builder.Property(e => e.Street)
                     .IsRequired(true)
@@ -69,10 +69,6 @@ namespace Warehouse.Infrastructure.Configurations
             builder.Property(e => e.AddressType)
                     .IsRequired(true)
                     .HasMaxLength(100);
-
-            builder.Property(e => e.Communicationkey)
-                    .ValueGeneratedNever()
-                    .IsRequired(true);
 
             builder.Property(e => e.IsActive)
                     .IsRequired(true);

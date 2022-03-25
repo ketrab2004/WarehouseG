@@ -36,7 +36,7 @@ namespace Warehouse.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<Guid>("Communicationkey")
+                    b.Property<Guid>("ContactKey")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("DateCreated")

@@ -12,7 +12,7 @@ namespace Warehouse.Infrastructure.Repositories
     /// <summary>
     /// Communication repositiry.
     /// </summary>
-    public class CommunicationRepository : Repository<CommunicationEntity>, ICommunicationRepository
+    public class CommunicationRepository : Repository<ContactEntity>, ICommunicationRepository
     {
         /// <summary>
         /// Dependency of DbContext.

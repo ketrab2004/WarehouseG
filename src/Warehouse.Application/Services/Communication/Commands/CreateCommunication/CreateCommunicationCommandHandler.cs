@@ -40,7 +40,7 @@ namespace Warehouse.Application.Services.Communication.Commands.CreateCommunicat
                 throw new ArgumentNullException(nameof(createRequest));
             }
 
-            var newCommunication = new CommunicationEntity
+            var newCommunication = new ContactEntity
             {
                 Street              = createRequest.Street,
                 Number              = createRequest.Number,
@@ -55,7 +55,7 @@ namespace Warehouse.Application.Services.Communication.Commands.CreateCommunicat
                 Website             = createRequest.Website ?? String.Empty,
                 AddressType         = createRequest.AddressType,
                 Description         = createRequest.Description ?? String.Empty,
-                Communicationkey    = Guid.NewGuid(),
+                ContactKey    = Guid.NewGuid(),
                 IsActive            = createRequest.IsActive,
                 DateCreated         = DateTime.Now,
                 DateModified        = DateTime.Now,
